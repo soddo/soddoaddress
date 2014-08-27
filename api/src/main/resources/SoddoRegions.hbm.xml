@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openmrs.module.soddoregistration">
+    <class name="SoddoRegions" table="soddoregistration_regions">
+        <id name="id" type="java.lang.Integer" column="form_id">
+            <generator class="increment"/>
+        </id>
+        <property name="uuid" type="java.lang.String"
+                  column="uuid" length="38" unique="true"/>
+
+        <property name="regionName" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
